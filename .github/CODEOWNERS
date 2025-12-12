@@ -7,7 +7,7 @@
 /Resources/ @floof-station/code-maintainers
 
 # Server config files
-/Resources/ConfigPresets/ @M3739
+/Resources/ConfigPresets/ @m3739
 
 # YML files
 /Resources/*.yml @floof-station/yaml-maintainers

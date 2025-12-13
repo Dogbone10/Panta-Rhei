@@ -162,7 +162,7 @@ Double-check your diff on GitHub before submitting: look for unintended commits 
 Additionally for long-lasting PRs, if you see `RobustToolbox` in the changed files you have to revert it, use `git checkout upstream/master RobustToolbox` (replacing `upstream` with the name of your Floof-Station/Panta-Rhei remote)
 
 # Changelogs
-###### _(Update this section again once we finish the changelog stuff. - M3739)_
+###### _(This section is not yet implemented. DO NOT ATTEMPT TO USE THE ADMIN OR MAPS CHANGELOGS. - M3739)_
 
 By default any changelogs goes in the Euphoria changelog, you can use the Euphoria admin changelog by putting `DELTAVADMIN:` in a line after `:cl:`.
 

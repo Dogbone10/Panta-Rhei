@@ -219,3 +219,13 @@ Entries:
       message: Freelancer PDA and ID
   id: 27
   time: '2026-01-24T07:45:07.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Add
+      message: Impstation Vox markings
+    - type: Add
+      message: Impstation Chitinid markings
+    - type: Add
+      message: Tail stencilled back into base vox
+  id: 28
+  time: '2026-01-26T01:04:45.0000000+00:00'

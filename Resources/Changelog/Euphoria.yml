@@ -237,3 +237,13 @@ Entries:
       message: Tweaked the map pool to run the same map pool as we previously ran.
   id: 29
   time: '2026-01-29T12:48:42.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Ported leashes, collars, and some associated features.
+    - type: Fix
+      message: >-
+        Leashes should now be less buggy, and bell collars will no longer play
+        twice as many sounds as they are supposed to.
+  id: 30
+  time: '2026-01-29T14:45:15.0000000+00:00'

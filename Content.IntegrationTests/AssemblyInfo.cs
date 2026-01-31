@@ -5,4 +5,5 @@
 // https://github.com/dotnet/runtime/issues/107197
 // So we can't really parallelize integration tests harder either until the runtime fixes that,
 // *or* we fix serv3 to not spam expression trees.
-[assembly: LevelOfParallelism(2)]
+// Floofstation - further lower the degree of parallelism because SS14 is just so memory-hungry.
+[assembly: LevelOfParallelism(1)]

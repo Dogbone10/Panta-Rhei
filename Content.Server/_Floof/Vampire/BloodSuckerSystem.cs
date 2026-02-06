@@ -36,6 +36,7 @@ namespace Content.Server.Vampiric
         [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
         [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
+
         public override void Initialize()
         {
             base.Initialize();
@@ -119,7 +120,7 @@ namespace Content.Server.Vampiric
                 }
             }
 
-            if (stream.BloodReagent != "Blood")
+            if (stream.BloodS != "Blood")
                 _popups.PopupEntity(Loc.GetString("bloodsucker-not-blood", ("target", victim)), victim, bloodsucker, Shared.Popups.PopupType.Medium);
             else if (_solutionSystem.PercentFull(victim) != 0)
                 _popups.PopupEntity(Loc.GetString("bloodsucker-fail-no-blood", ("target", victim)), victim, bloodsucker, Shared.Popups.PopupType.Medium);

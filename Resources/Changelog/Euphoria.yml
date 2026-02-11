@@ -392,3 +392,11 @@ Entries:
       message: Changed Hristov sound
   id: 47
   time: '2026-02-11T05:25:30.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Ported Senior Roles
+    - type: Add
+      message: Ported Inventory Specialist
+  id: 48
+  time: '2026-02-11T07:32:42.0000000+00:00'

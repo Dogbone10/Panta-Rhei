@@ -422,3 +422,15 @@ Entries:
       message: Mutton
   id: 51
   time: '2026-02-12T07:15:32.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked the AME on the pathfinder so fuel level notifications get sent
+        over Logi radio not Engi.
+    - type: Tweak
+      message: >-
+        Disabled Delta-vs salvage shuttle from spawning since we use the
+        pathfinder.
+  id: 52
+  time: '2026-02-12T07:34:17.0000000+00:00'

@@ -444,3 +444,9 @@ Entries:
       message: Add vapes to the shady cidgs vendor & entity spawn panel
   id: 53
   time: '2026-02-12T07:35:15.0000000+00:00'
+- author: JFerrix
+  changes:
+    - type: Fix
+      message: Changed Kitsune colour schemes to hues
+  id: 54
+  time: '2026-02-15T05:36:57.0000000+00:00'

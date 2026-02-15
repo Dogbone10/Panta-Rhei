@@ -462,3 +462,11 @@ Entries:
       message: Ported the custom examine system.
   id: 56
   time: '2026-02-15T06:33:15.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Ported the Floof Artifact effects that everyone loves
+    - type: Tweak
+      message: changed somethings about the friend who shows up
+  id: 57
+  time: '2026-02-15T06:37:47.0000000+00:00'

@@ -450,3 +450,9 @@ Entries:
       message: Changed Kitsune colour schemes to hues
   id: 54
   time: '2026-02-15T05:36:57.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Add
+      message: The ability to have an arm that acts like a crowbar.
+  id: 55
+  time: '2026-02-15T06:13:35.0000000+00:00'

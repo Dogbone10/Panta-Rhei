@@ -528,3 +528,11 @@ Entries:
       message: VB longggg neck
   id: 65
   time: '2026-02-20T22:23:34.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Ported item offering.
+    - type: Tweak
+      message: Ported some carrying and pseudo-item changes from floofstation.
+  id: 66
+  time: '2026-02-20T22:36:43.0000000+00:00'

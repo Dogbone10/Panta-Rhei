@@ -508,3 +508,11 @@ Entries:
       message: Tweak Mystagogues lockers so they start with a binary encryption key.
   id: 63
   time: '2026-02-20T07:24:16.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Mass mindswap now requires consent opt-in and shouldn't cause chain
+        mindswaps
+  id: 64
+  time: '2026-02-20T07:25:08.0000000+00:00'

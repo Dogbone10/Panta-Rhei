@@ -548,3 +548,9 @@ Entries:
       message: Borers from spawning until consent can be worked out
   id: 68
   time: '2026-02-21T06:24:37.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Most markings are now usable on all human-like species.
+  id: 69
+  time: '2026-02-21T07:06:16.0000000+00:00'

@@ -536,3 +536,9 @@ Entries:
       message: Ported some carrying and pseudo-item changes from floofstation.
   id: 66
   time: '2026-02-20T22:36:43.0000000+00:00'
+- author: MidnightFoxx
+  changes:
+    - type: Add
+      message: 'Added: Jermov Lawset for Station AI'
+  id: 67
+  time: '2026-02-21T04:09:57.0000000+00:00'

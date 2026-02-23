@@ -594,3 +594,9 @@ Entries:
         languages that chassis is able to speak.
   id: 75
   time: '2026-02-23T06:22:23.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Ported slime and shadekin emotes.
+  id: 76
+  time: '2026-02-23T07:11:36.0000000+00:00'

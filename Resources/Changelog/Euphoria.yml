@@ -626,3 +626,15 @@ Entries:
       message: THE SHOAL HAS RE-ENABLED VOX SPACE-PROOFING, PRAISE THE AURALIS!!!
   id: 79
   time: '2026-02-25T04:43:10.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Mappers no longer have to make sure to add spawnpoints for every job on
+        every map. Now only a cryosleep/latejoin spawnpoint is necessary.
+    - type: Tweak
+      message: >-
+        Let players play intern roles even if they are well above the play time
+        amount.
+  id: 80
+  time: '2026-02-25T06:38:23.0000000+00:00'

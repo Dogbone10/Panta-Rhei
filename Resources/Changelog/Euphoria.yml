@@ -684,3 +684,11 @@ Entries:
       message: more characters to consent
   id: 86
   time: '2026-02-25T22:59:31.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked some event rates, disabled zombies, and more. See the PR 118 for
+        details.
+  id: 87
+  time: '2026-02-26T04:25:19.0000000+00:00'

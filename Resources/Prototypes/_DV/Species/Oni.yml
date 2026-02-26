@@ -11,16 +11,30 @@
   femaleFirstNames: NamesOniFemale
   lastNames: NamesOniLocation
   naming: LastNoFirst
-  baseScale: "1.2, 1.2"
-  maxHeight: 1.05
+  # baseScale: "1.2, 1.2" # Floofstation
+  minHeight: 0.9 # Floofstation
+  maxHeight: 1.3 # Floofstation
+  defaultHeight: 1.2 # Floofstation
 
 - type: markingPoints
   id: MobOniMarkingLimits
   points:
-    Hair:
+    Special:
       points: 1
       required: false
-    FacialHair:
+    Tail:
+      points: 1
+      required: false
+    Head:
+      points: 1
+      required: false
+    Face:
+      points: 1
+      required: false
+    Snout:
+      points: 1
+      required: false
+    SnoutCover:
       points: 1
       required: false
     HeadTop:
@@ -31,15 +45,36 @@
       points: 1
       required: false
       defaultMarkings: [ PointyEarsUpwards ]
-    Snout:
-      points: 2
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    UndergarmentTop:
+      points: 1
+      required: false
+    UndergarmentBottom:
+      points: 1
+      required: false
+    Underwear:
+      points: 1
+      required: false
+    Undershirt:
+      points: 1
+      required: false
+    Eyes:
+      points: 1
       required: false
     Chest:
+      points: 10
+      required: false
+    Wings:
       points: 1
       required: false
     Legs:
-      points: 6
+      points: 10
       required: false
     Arms:
-      points: 6
+      points: 10
       required: false

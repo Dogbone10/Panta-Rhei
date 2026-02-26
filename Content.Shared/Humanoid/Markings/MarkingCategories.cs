@@ -5,6 +5,8 @@ namespace Content.Shared.Humanoid.Markings
     [Serializable, NetSerializable]
     public enum MarkingCategories : byte
     {
+        TaurBody,
+        TaurBodyConnector,
         Special,
         Hair,
         FacialHair,
@@ -12,15 +14,27 @@ namespace Content.Shared.Humanoid.Markings
         HeadTop,
         HeadSide,
         Eyes, // DeltaV - Add Eyes Category for IPCs
+        Face,
         Snout,
         SnoutCover,
         Chest,
         NeckFluff,
         UndergarmentTop,
         UndergarmentBottom,
+        Underwear,
+        Undershirt,
         Arms,
+        LArm,
+        RArm,
+        LHand,
+        RHand,
         Legs,
+        LLeg,
+        RLeg,
+        LFoot,
+        RFoot,
         Tail,
+        Wings,
         Overlay
     }
 
@@ -30,6 +44,7 @@ namespace Content.Shared.Humanoid.Markings
         {
             return layer switch
             {
+
                 HumanoidVisualLayers.Special => MarkingCategories.Special,
                 HumanoidVisualLayers.Hair => MarkingCategories.Hair,
                 HumanoidVisualLayers.FacialHair => MarkingCategories.FacialHair,
@@ -53,6 +68,8 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.Tail => MarkingCategories.Tail,
                 HumanoidVisualLayers.RArmExtension => MarkingCategories.Arms, // Frontier: species-specific layer
                 HumanoidVisualLayers.LArmExtension => MarkingCategories.Arms, // Frontier: species-specific layer
+                HumanoidVisualLayers.TaurBodyConnector => MarkingCategories.TaurBodyConnector, // Floof: species-specific layer
+                HumanoidVisualLayers.TaurBody => MarkingCategories.TaurBody, // Floof: species-specific layer
                 _ => MarkingCategories.Overlay
             };
         }

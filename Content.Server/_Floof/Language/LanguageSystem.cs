@@ -14,6 +14,7 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
     public override void Initialize()
     {
         base.Initialize();
+        InitializeRelay();
 
         SubscribeLocalEvent<LanguageSpeakerComponent, MapInitEvent>(OnInitLanguageSpeaker);
         SubscribeLocalEvent<LanguageSpeakerComponent, ComponentGetState>(OnGetLanguageState);
@@ -67,7 +68,7 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
 
     #region public api
 
-    public void SetLanguage(Entity<LanguageSpeakerComponent?> ent, ProtoId<LanguagePrototype> language)
+    public override void SetLanguage(Entity<LanguageSpeakerComponent?> ent, ProtoId<LanguagePrototype> language)
     {
         if (!CanSpeak(ent, language)
             || !SpeakerQuery.Resolve(ent, ref ent.Comp)
@@ -82,7 +83,7 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
     /// <summary>
     ///     Adds a new language to the respective lists of intrinsically known languages of the given entity.
     /// </summary>
-    public void AddLanguage(
+    public override void AddLanguage(
         EntityUid uid,
         ProtoId<LanguagePrototype> language,
         bool addSpoken = true,
@@ -105,7 +106,7 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
     /// <summary>
     ///     Removes a language from the respective lists of intrinsically known languages of the given entity.
     /// </summary>
-    public void RemoveLanguage(
+    public override void RemoveLanguage(
         Entity<LanguageKnowledgeComponent?> ent,
         ProtoId<LanguagePrototype> language,
         bool removeSpoken = true,
@@ -130,7 +131,7 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
     ///   If not, sets it to the first entry of its SpokenLanguages list, or universal if it's empty.
     /// </summary>
     /// <returns>True if the current language was modified, false otherwise.</returns>
-    public bool EnsureValidLanguage(Entity<LanguageSpeakerComponent?> ent)
+    public override bool EnsureValidLanguage(Entity<LanguageSpeakerComponent?> ent)
     {
         if (!SpeakerQuery.Resolve(ent, ref ent.Comp, false))
             return false;
@@ -156,7 +157,7 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
 
         var ev = new DetermineEntityLanguagesEvent();
         // We add the intrinsically known languages first so other systems can manipulate them easily
-        if (TryComp<LanguageKnowledgeComponent>(ent, out var knowledge))
+        if (KnowledgeQuery.TryComp(ent, out var knowledge))
         {
             foreach (var spoken in knowledge.SpokenLanguages)
                 ev.SpokenLanguages.Add(spoken);

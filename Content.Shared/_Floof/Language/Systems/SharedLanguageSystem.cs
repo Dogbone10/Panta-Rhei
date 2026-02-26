@@ -26,6 +26,7 @@ public abstract partial class SharedLanguageSystem : EntitySystem
     public static LanguagePrototype Universal { get; private set; } = default!;
 
     protected EntityQuery<LanguageSpeakerComponent> SpeakerQuery = default!;
+    protected EntityQuery<LanguageKnowledgeComponent> KnowledgeQuery = default!;
     protected EntityQuery<UniversalLanguageSpeakerComponent> UniversalQuery = default!;
 
     public override void Initialize()
@@ -33,6 +34,7 @@ public abstract partial class SharedLanguageSystem : EntitySystem
         Universal = _prototype.Index(UniversalPrototype);
 
         SpeakerQuery = GetEntityQuery<LanguageSpeakerComponent>();
+        KnowledgeQuery = GetEntityQuery<LanguageKnowledgeComponent>();
         UniversalQuery = GetEntityQuery<UniversalLanguageSpeakerComponent>();
     }
 
@@ -107,6 +109,24 @@ public abstract partial class SharedLanguageSystem : EntitySystem
         _prototype.TryIndex(id, out var proto);
         return proto;
     }
+
+    /// <remarks>Does nothing on the client side.</remarks>
+    public virtual void SetLanguage(Entity<LanguageSpeakerComponent?> ent, ProtoId<LanguagePrototype> language) {}
+
+    /// <remarks>Does nothing on the client side.</remarks>
+    public virtual void AddLanguage(EntityUid uid, ProtoId<LanguagePrototype> language, bool addSpoken = true, bool addUnderstood = true) {}
+
+    /// <remarks>Does nothing on the client side.</remarks>
+    public virtual void RemoveLanguage(Entity<LanguageKnowledgeComponent?> ent, ProtoId<LanguagePrototype> language, bool removeSpoken = true, bool removeUnderstood = true) {}
+
+    /// <remarks>Does nothing on the client side.</remarks>
+    public virtual bool EnsureValidLanguage(Entity<LanguageSpeakerComponent?> ent) => true;
+
+    /// <summary>
+    ///     Makes the relay target speak and understand exactly the same languages as the relay source. If relay source is null, clears the relay instead.
+    ///     Does nothing on client.
+    /// </summary>
+    public virtual void SetupLanguageRelay(EntityUid relayTarget, Entity<LanguageKnowledgeComponent?>? relaySource) {}
 
     /// <summary>
     ///     Obfuscates the message using the provided language prototype.

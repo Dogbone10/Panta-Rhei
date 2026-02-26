@@ -19,7 +19,7 @@
   parent: BasePDA
   id: AnimalPDA
   name: Beast PDA
-  description: Covered in scratches. A coordinate switch has been soldered onto the open circuits.
+  description: For non-human crew. A coordinate switch has been soldered onto the open circuits.
   components:
   - type: Appearance
     appearanceDataInit:

@@ -1,14 +1,14 @@
 - type: body
-  id: Carp
+  id: CarpHands
   name: carp
   root: torso
   slots:
     torso:
       part: TorsoAnimal
       connections:
+      - right hand # Floof
+      - left hand # Floof
       - tail
-      - left arm #Floof
-      - right arm #Floof
       organs:
         lungs: OrganSpaceAnimalLungs # Immunity to airloss
         stomach: OrganAnimalStomach
@@ -17,15 +17,7 @@
         kidneys: OrganAnimalKidneys
     tail:
       part: TailCarp
-    left arm:
-      part: LeftArmFish
-      connections:
-      - left hand
-    left hand:
-      part: LeftHandFish
-    right arm:
-      part: RightArmFish
-      connections:
-      - right hand
     right hand:
       part: RightHandFish
+    left hand:
+      part: LeftHandFish

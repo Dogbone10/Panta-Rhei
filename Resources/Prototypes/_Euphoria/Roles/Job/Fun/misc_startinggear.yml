@@ -1,0 +1,5 @@
+- type: startingGear
+  id: FriendlyPlayerMob
+  equipment:
+    id: AnimalPDA
+    back: ClothingBackpackDeathSquad

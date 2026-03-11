@@ -107,11 +107,6 @@
   - type: AntiRottingContainer
 
 - type: entity
-  parent: [ N14ClosetFridgeDirty, N14ClosetFridgeWideDirty ]
-  id: N14LootClosetFridge
-  suffix: Loot,Domestic,Random
-
-- type: entity
   parent: N14ClosetBaseW
   id: N14ClosetDouble
   name: double closet
@@ -166,16 +161,7 @@
 
 - type: entity
   parent: N14ClosetBaseW
-  id: N14ClosetEnclave
-  suffix: enclave roller
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Closets/closetenclave.rsi
-
-- type: entity
-  parent: N14ClosetBaseW
   id: N14ClosetGeneric
-  suffix: generic roller
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Storage/Closets/closetgeneric.rsi

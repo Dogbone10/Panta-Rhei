@@ -73,6 +73,17 @@
 
 - type: entity
   parent: CrateGenericSteel
+  id: N14LootCrateWastelandBotany
+  name: medical crate
+  description: A metal crate for storing medical equipment.
+  components:
+  - type: Icon
+    sprite: _Nuclear14/Structures/Storage/Crates/hydroponics.rsi
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Storage/Crates/hydroponics.rsi
+
+- type: entity
+  parent: CrateGenericSteel
   id: N14CrateRed
   name: red crate
   description: A faded red crate for storing stuff.
